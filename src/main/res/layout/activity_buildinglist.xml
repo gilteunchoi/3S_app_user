@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BuildingListActivity"
+    android:background="#76E69B">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/location"
+        android:text="Get Current Location"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toTopOf="@+id/pointer"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        android:background="@drawable/round2"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/pointer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/compass_icon"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text=""
+        android:textSize="50sp"
+        android:background="@drawable/round1"
+        android:src="@drawable/direction_icon"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="482dp"
+
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

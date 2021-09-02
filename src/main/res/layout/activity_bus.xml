@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusActivity"
+    android:background="#76E69B">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Bus"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/round2"
+        android:orientation="horizontal"
+        android:text="Get Current Location"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton4"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:layout_constraintVertical_bias="0.479"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/round2"
+        android:orientation="horizontal"
+        android:text="Voice Recognition"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/round1"
+        android:src="@drawable/bus_icon"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
